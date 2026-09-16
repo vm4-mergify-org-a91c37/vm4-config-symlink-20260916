@@ -1,1 +1,8 @@
-policy.yml
+pull_request_rules:
+  - name: merge only after label and two approvals
+    conditions:
+      - label = vm4-approved
+      - "#approved-reviews-by >= 2"
+    actions:
+      merge:
+        method: squash
