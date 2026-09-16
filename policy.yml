@@ -1,0 +1,1 @@
+pull_request_rules:\n  - name: merge approved controlled PRs\n    conditions:\n      - label = vm4-approved\n    actions:\n      merge:\n        method: squash\n
