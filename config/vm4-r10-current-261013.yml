@@ -7,3 +7,9 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+  - name: VM4_R10_B_TARGET_ONLY_POLICY_MARKER_261013
+    conditions:
+      - title = VM4_R10_NEVER_INTENTIONAL_ACTION_261013
+    actions:
+      comment:
+        message: VM4_R10_B_POLICY_TARGET_WRITTEN_261013
